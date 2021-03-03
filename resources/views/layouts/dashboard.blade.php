@@ -77,8 +77,8 @@
           <div class="row">
             <div class="col-xs-12 col-md-3 col-lg-2">
               <ul class="list-unstyled">
-                <li><a href="">Dashboard</a></li>
-                <li><a href="">Comics</a></li>
+                <li><a href="{{route ('admin.index')}}">Dashboard</a></li>
+                <li><a href="{{ route ('admin.comics.index')}}">Comics</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Site</a></li>
 
