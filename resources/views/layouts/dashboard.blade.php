@@ -16,8 +16,10 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
     <div id="app">
@@ -71,25 +73,24 @@
                 </div>
             </div>
         </nav>
-
-        <div class="container mt-2">
+        <div class="container py-4 mt-2">
           <div class="row">
-            <div class="col-xs-12 col-md-3 col-lg-3">
+            <div class="col-xs-12 col-md-3 col-lg-2">
               <ul class="list-unstyled">
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Comics</a></li>
-                <li><a href="#">Post</a></li>
-
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Comics</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Site</a></li>
 
               </ul>
             </div>
+            <main class="py-4 col-xs-12 col-md-9 col-lg-10">
+              @yield('content')
+            </main>
 
           </div>
 
         </div>
-        <main class="col-xs-12 col-md-9 col-lg-9 ">
-            @yield('content')
-        </main>
     </div>
 </body>
 </html>
