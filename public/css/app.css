@@ -10946,6 +10946,7 @@ a.text-dark:focus {
 
 body {
   width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .bluebar {
@@ -10994,5 +10995,62 @@ body {
 
 .second a {
   padding: 0 15px;
+}
+
+.comic {
+  width: 100%;
+  background-color: #222222;
+  position: relative;
+  height: 200px;
+  display: flex;
+}
+
+.comic .banner {
+  background-color: #3797F6;
+  width: 20%;
+  padding: 5px;
+  position: absolute;
+  top: -20px;
+  left: 100px;
+  text-align: center;
+}
+
+.comic .banner h4 {
+  color: white;
+  text-transform: uppercase;
+  font-size: bold;
+}
+
+.banner_link {
+  width: 35%;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
+
+.banner_link a {
+  color: grey;
+  text-transform: uppercase;
+  font-size: 700;
+  margin: 0 10px;
+}
+
+.card_one {
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+
+.card_one .flag {
+  text-align: center;
+  background-color: #3797F6;
+  color: white;
+}
+
+.card_one .small_text {
+  color: white;
+}
+
+.card_one .available {
+  color: #3797F6;
 }
 
