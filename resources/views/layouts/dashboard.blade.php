@@ -80,7 +80,7 @@
                 <li><a href="{{route ('admin.index')}}">Dashboard</a></li>
                 <li><a href="{{ route ('admin.comics.index')}}">Comics</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Site</a></li>
+                <li><a href="/">Site</a></li>
 
               </ul>
             </div>

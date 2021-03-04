@@ -11,9 +11,9 @@
           </ul>
         </div>
       @endif
-      <form class="form-group" action="{{route ('admin.comics.store')}}" method="post">
+      <form class="form-group" action="{{route ('admin.comics.store')}}" method="post" enctype="multipart/form-data">
         @csrf
-
+        @METHOD('POST')
         <label for="title">Titolo del comic: </label>
         <input class="form-control" type="text" name="title" id="title" value="{{ old('title')}}">
         @error('title')
@@ -22,7 +22,7 @@
         <br>
 
         <div class="form-group">
-          <label for="">Cover</label>
+          <label for="">Cover</label> 
           <input type="file" class="form-control-file" name="cover" placeholder="Add a cover image" aria-describedby="coverHelper">
           <small id="coverHelper" class="form-text text-muted">Add a cover img for this comic</small>
 

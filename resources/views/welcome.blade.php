@@ -4,97 +4,46 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>DC comic Homepage</title>
 
-        <!-- Fonts -->
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('admin') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+      <!-- costruisco la navbar -->
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+      <nav>
+        <div class="bluebar">
+          <a href="#"><img class="logodc" src="http://www.dccomics.com/sites/all/themes/dc_comics_bp/images/DC_desktop_blue.svg" alt=""></a>
+          <a href="#"><img src="http://www.dccomics.com/sites/all/themes/dc_comics_bp/images/DCUI_desktop.svg" alt=""></a>
+          <a href="#"><img src="http://www.dccomics.com/sites/all/themes/dc_comics_bp/images/DC_SHOP_desktop.svg" alt=""></a>
+          <a href="#"><img src="http://www.dccomics.com/sites/all/themes/dc_comics_bp/images/DC_community.svg" alt=""></a>
+          <a href="#"><img src="http://www.dccomics.com/sites/all/themes/dc_comics_bp/images/DC_on_HBOMAX_desktop.svg" alt=""></a>
         </div>
+        <div class="headbar">
+          <div class="first">
+            <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/logo.png" alt="">
+          </div>
+          <div class="second">
+            <a href="#">characters</a>
+            <a href="#">comics</a>
+            <a href="#">movies</a>
+            <a href="#">tv</a>
+            <a href="#">games</a>
+            <a href="#">videos</a>
+            <a href="#">news</a>
+            <a href="#">shop<i class="fas fa-angle-down last"></i></a>
+          </div>
+          <div class="search">
+            <a  href="#">Search <i class="fas fa-search"></i></a>
+          </div>
+        </div>
+      </nav>
+      <header>
+        
+      </header>
+
+
     </body>
 </html>

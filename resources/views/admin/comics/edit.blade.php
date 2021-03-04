@@ -10,20 +10,21 @@
           </ul>
         </div>
       @endif
-      <form class="" action="{{route ('admin.comics.update', ['comic' => $comics->title] )}}" method="post">
+      <form class="" action="{{route ('admin.comics.update', ['comic' => $comic->id] )}}" method="post">
         @csrf
         @method('PUT')
         <label for="title">Titolo del comic: </label>
-        <input type="text" name="title" id="title" value="{{$comics->title}}">
+        <input type="text" name="title" id="title" value="{{$comic->title}}">
         @error('title')
           <div class="alert alert-danger">{{ $message }}</div>
         @enderror
         <br>
         <label for="cover">cover del comic: </label>
-        <img src="{{ $comics->cover}}" alt="">
+        <img src="{{ $comic->cover}}" alt="">
         @error('cover')
           <div class="alert alert-danger">{{ $message }}</div>
         @enderror
+        <br>
         <button type="submit" name="button">INVIA</button>
       </form>
 @endsection

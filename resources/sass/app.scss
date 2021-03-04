@@ -6,3 +6,9 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+body{
+  width: 100%;
+}
+// ********************** navbar ************************
+@import '/partials._navbar.scss'
+// ******************** header *****************
