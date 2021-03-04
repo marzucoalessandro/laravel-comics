@@ -176,9 +176,23 @@
             </div>
           </div>
         </section>
-
-
       </main>
+      <footer>
+        <div class="lightblue">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </footer>
+
+
 
 
 
