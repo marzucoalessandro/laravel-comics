@@ -11148,6 +11148,25 @@ main .card_two p {
 }
 
 .lightblue {
-  background-color: #3797F6;
+  background-color: #00a9d9;
+  padding: 30px 0;
+}
+
+.lightblue .icon {
+  width: 20%;
+  margin: 0 15px;
+}
+
+.lightblue span {
+  color: white;
+  text-transform: uppercase;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.flex_2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 

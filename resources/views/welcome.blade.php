@@ -181,8 +181,23 @@
         <div class="lightblue">
           <div class="container">
             <div class="row">
-              <div class="col-12">
-                
+              <div class="col-12 flex_2">
+                <div class="icon">
+                  <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/buy-bar-DCUI.svg" alt="">
+                  <span>digital comics</span>
+                </div>
+                <div class="icon">
+                  <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/buy-bar-DCshop.svg" alt="">
+                  <span>dc merchandise</span>
+                </div>
+                <div class="icon">
+                  <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/buy-bar-subscription.svg" alt="">
+                  <span>print subscriptions</span>
+                </div>
+                <div class="icon">
+                  <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/buy-bar-locator.svg" alt="">
+                  <span>comic shop locator</span>
+                </div>
 
               </div>
 
