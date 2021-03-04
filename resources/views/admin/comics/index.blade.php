@@ -13,17 +13,17 @@
     </tr>
   </thead>
   <tbody>
-    @foreach($comic as $item)
+    @foreach($comic as $comics)
     <tr>
-      <td scope="row">{{$item->id}}</td>
-      <td>{{$item->cover}}</td>
-      <td>{{$item->title}}</td>
+      <td scope="row">{{$comics->id}}</td>
+      <td>{{$comics->cover}}</td>
+      <td>{{$comics->title}}</td>
 
       <td>
-        <a href="{{route ('admin.comics.show', ['item'=> $item->id])}}" class="btn btn-primary">View</a>
-        <a href="{{route ('admin.comics.edit', ['item'=> $item->id])}}" class="btn btn-warning">Edit</a>
+        <a href="{{route ('admin.comics.show', ['comic'=> $comics->id])}}" class="btn btn-primary">View</a>
+        <a href="{{route ('admin.comics.edit', ['comic'=> $comics->id])}}" class="btn btn-warning">Edit</a>
 
-        <form class="" action="{{route('admin.comics.destroy', ['item'=> $item->id] )}}" method="post">
+        <form class="" action="{{route('admin.comics.destroy', ['comic'=> $comics->id] )}}" method="post">
           @csrf
           @method('DELETE')
           <button type="submit" name="button" class="btn btn-danger">Delete</button>

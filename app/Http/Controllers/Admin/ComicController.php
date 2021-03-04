@@ -27,7 +27,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.comics.create');
     }
 
     /**
@@ -38,7 +38,15 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validate = $request->validate([
+          'title' => 'required',
+          'cover' => 'required'
+        ]);
+
+        Comics::create($validate);
+        $new_comic = Comics::orderBy('id', 'desc')->first();
+
+        return redirect()->route('admin.comics.index', compact('new_comic'));
     }
 
     /**
@@ -47,9 +55,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Comics $comics)
     {
-        //
+      return view('admin.comics.show', compact('comics', ['comics' => $comics->id]));
     }
 
     /**
@@ -58,9 +66,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Comics $comics)
     {
-        //
+      return view('admin.comics.edit', compact('comics', ['comics' => $comics->id]));
     }
 
     /**
@@ -70,9 +78,15 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Comics $comics)
     {
-        //
+      $validate = $request->validate([
+          'title' => 'required',
+          'cover' => 'required'
+        ]);
+
+        $comics->update($validate);
+        return redirect()->route('admin.comics.index');
     }
 
     /**
