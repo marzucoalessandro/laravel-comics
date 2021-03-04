@@ -10945,7 +10945,6 @@ a.text-dark:focus {
 }
 
 body {
-  width: 100%;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -11001,6 +11000,7 @@ body {
   width: 100%;
   background-color: #222222;
   position: relative;
+  justify-content: space-around;
   display: flex;
 }
 
@@ -11037,6 +11037,7 @@ body {
 .card_one {
   padding-top: 50px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .card_one .flag {
@@ -11044,8 +11045,9 @@ body {
   text-align: center;
   background-color: #3797F6;
   color: white;
-  width: 20%;
-  display: inline-block;
+  width: 25%;
+  position: absolute;
+  top: 50px;
 }
 
 .card_one .small_text {
@@ -11060,7 +11062,80 @@ body {
   width: 90%;
 }
 
-.card_one .first_img {
-  margin-left: 10px;
+main {
+  margin-top: 30px;
+}
+
+main .must_read {
+  display: flex;
+  justify-content: space-between;
+}
+
+main h3 {
+  color: #3797F6;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+main .card_two {
+  width: 30%;
+}
+
+main .card_two img {
+  width: 100%;
+}
+
+main .card_two h4 {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 10px;
+  color: #3797F6;
+  font-weight: 700;
+}
+
+main .card_two h2 {
+  font-size: 1.2rem;
+  color: grey;
+  text-transform: uppercase;
+}
+
+main .card_two p {
+  font-size: 10px;
+  color: grey;
+}
+
+.collection {
+  width: 100%;
+  background-color: #222222;
+  position: relative;
+}
+
+.tag {
+  background-color: #3797F6;
+  position: absolute;
+}
+
+.tag .current {
+  color: white;
+  text-transform: uppercase;
+}
+
+.card_three {
+  margin: 20px 0;
+  width: 15%;
+}
+
+.card_three h5 {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
