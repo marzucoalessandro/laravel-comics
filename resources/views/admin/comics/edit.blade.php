@@ -10,7 +10,7 @@
           </ul>
         </div>
       @endif
-      <form class="form-group" action="{{route ('admin.comics.update', ['comic' => $comic->id] )}}" method="post">
+      <form class="form-group" action="{{route ('admin.comics.update', ['comic' => $comic->id] )}}" method="post" enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <label for="title">Titolo del comic: </label>
