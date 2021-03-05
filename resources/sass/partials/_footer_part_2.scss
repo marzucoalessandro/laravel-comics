@@ -1,0 +1,42 @@
+.sfondo{
+  width: 100%;
+  background-color: #222222;
+  background-image: url(https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.column{
+  margin-top: 30px;
+  h3{
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    color: #959595;
+    list-style-type: none;
+
+  }
+  .shop{
+    margin-top: 20px;
+  }
+}
+.flex_3{
+  display: flex;
+  justify-content: flex-start;
+}
+.dc{
+  position: relative;
+  img{
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    padding-top: 20px;
+  }
+}

@@ -11148,7 +11148,7 @@ main .card_two p {
 }
 
 .lightblue {
-  background-color: #00a9d9;
+  background-color: #3797F6;
   padding: 30px 0;
 }
 
@@ -11183,14 +11183,24 @@ main .card_two p {
 }
 
 .column h3 {
+  font-size: 1rem;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
 }
 
+.column ul {
+  margin: 0;
+  padding: 0;
+}
+
 .column li {
   color: #959595;
   list-style-type: none;
+}
+
+.column .shop {
+  margin-top: 20px;
 }
 
 .flex_3 {
@@ -11203,7 +11213,52 @@ main .card_two p {
 }
 
 .dc img {
+  height: 120%;
+  width: 100%;
   position: absolute;
   top: -20px;
+  padding-top: 20px;
+}
+
+.closer {
+  background-color: #303030;
+}
+
+.closer .last {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.closer .last button {
+  padding: 5px;
+  border: 2px solid #3797F6;
+  color: white;
+  background-color: #303030;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.closer .last span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3797F6;
+  text-transform: uppercase;
+}
+
+.closer .last .icon {
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closer .last .icon i {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: grey;
+  color: #303030;
+  margin: 0 10px;
 }
 

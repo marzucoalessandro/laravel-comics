@@ -221,7 +221,7 @@
                     <li>news</li>
                     <li>DC shop</li>
                   </ul>
-                  <h3>shop</h3>
+                  <h3 class="shop">shop</h3>
                   <ul>
                     <li>shop DC</li>
                     <li>shop DC Collectibles</li>
@@ -231,7 +231,7 @@
                   <h3>dc</h3>
                   <ul>
                     <li>terms of use</li>
-                    <li>privacy policy (new)</li>
+                    <li>privacy policy</li>
                     <li>advertising</li>
                     <li>jobs</li>
                     <li>subscriptions</li>
@@ -262,6 +262,25 @@
 
             </div>
 
+          </div>
+        </div>
+        <div class="closer">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="last">
+                  <button type="button" name="button">sign-up now</button>
+                  <div class="icon">
+                    <span>follow us</span>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-periscope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
