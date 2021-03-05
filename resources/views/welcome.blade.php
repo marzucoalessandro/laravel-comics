@@ -205,12 +205,65 @@
 
           </div>
         </div>
+        <div class="sfondo">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 flex_3">
+                <div class="column">
+                  <h3>dc comics</h3>
+                  <ul>
+                    <li>characters</li>
+                    <li>comics</li>
+                    <li>movies</li>
+                    <li>tv</li>
+                    <li>games</li>
+                    <li>videos</li>
+                    <li>news</li>
+                    <li>DC shop</li>
+                  </ul>
+                  <h3>shop</h3>
+                  <ul>
+                    <li>shop DC</li>
+                    <li>shop DC Collectibles</li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <h3>dc</h3>
+                  <ul>
+                    <li>terms of use</li>
+                    <li>privacy policy (new)</li>
+                    <li>advertising</li>
+                    <li>jobs</li>
+                    <li>subscriptions</li>
+                    <li>talent workshop</li>
+                    <li>CPSC certificates</li>
+                    <li>ratings</li>
+                    <li>shop help</li>
+                    <li>contact us</li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <h3>sites</h3>
+                  <ul>
+
+                    <li>dc</li>
+                    <li>mad magazine</li>
+                    <li>dc kids</li>
+                    <li>dc universe</li>
+                    <li>dc shop</li>
+
+                  </ul>
+                </div>
+
+              </div>
+              <div class="col-6 dc">
+                <img class="dc" src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/logo-background-v2.png" alt="">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
       </footer>
-
-
-
-
-
-
     </body>
-</html>
+    </html>

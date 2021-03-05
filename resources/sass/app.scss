@@ -7,10 +7,7 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-body{
-
-  font-family: 'Noto Sans JP', sans-serif;
-}
+@import 'partials/_body.scss';
 
 @import 'partials/_navbar.scss';
 
@@ -20,23 +17,35 @@ body{
 
 @import 'partials/_section_2.scss';
 
-.lightblue{
-  background-color: #00a9d9;
-  padding: 30px 0;
+@import 'partials/_footer_part_1.scss';
 
-  .icon{
-    width: 20%;
-    margin: 0 15px;
-  }
-  span{
+.sfondo{
+  width: 100%;
+  background-color: #222222;
+  background-image: url(https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.column{
+  margin-top: 30px;
+  h3{
     color: white;
+    font-weight: 700;
     text-transform: uppercase;
-    margin-left: 5px;
-    font-size: 10px;
+  }
+  li{
+    color: #959595;
+    list-style-type: none;
   }
 }
-.flex_2{
+.flex_3{
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: flex-start;
+}
+.dc{
+  position: relative;
+  img{
+    position: absolute;
+    top: -20px;
+  }
 }

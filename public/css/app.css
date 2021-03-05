@@ -11170,3 +11170,40 @@ main .card_two p {
   flex-direction: row;
 }
 
+.sfondo {
+  width: 100%;
+  background-color: #222222;
+  background-image: url(https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.column {
+  margin-top: 30px;
+}
+
+.column h3 {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.column li {
+  color: #959595;
+  list-style-type: none;
+}
+
+.flex_3 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dc {
+  position: relative;
+}
+
+.dc img {
+  position: absolute;
+  top: -20px;
+}
+
