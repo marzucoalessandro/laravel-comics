@@ -7,6 +7,7 @@
 }
 .column{
   margin-top: 30px;
+  margin-right: 20px;
   h3{
     font-size: 1rem;
     color: white;
@@ -31,12 +32,19 @@
   justify-content: flex-start;
 }
 .dc{
-  position: relative;
-  img{
-    height: 120%;
-    width: 100%;
-    position: absolute;
-    top: -20px;
-    padding-top: 20px;
+
+  background-image: url(https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/logo-background-v2.png);
+  background-repeat: no-repeat;
+  background-position-y: 37%;
+}
+.copyright{
+  margin-top: 10px;
+  color: #959595;
+  font-size: 11px;
+  p{
+    line-height: 2px;
   }
+}
+.color{
+  color: #3797F6;
 }

@@ -11180,6 +11180,7 @@ main .card_two p {
 
 .column {
   margin-top: 30px;
+  margin-right: 20px;
 }
 
 .column h3 {
@@ -11209,15 +11210,23 @@ main .card_two p {
 }
 
 .dc {
-  position: relative;
+  background-image: url(https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/logo-background-v2.png);
+  background-repeat: no-repeat;
+  background-position-y: 37%;
 }
 
-.dc img {
-  height: 120%;
-  width: 100%;
-  position: absolute;
-  top: -20px;
-  padding-top: 20px;
+.copyright {
+  margin-top: 10px;
+  color: #959595;
+  font-size: 11px;
+}
+
+.copyright p {
+  line-height: 2px;
+}
+
+.color {
+  color: #3797F6;
 }
 
 .closer {
