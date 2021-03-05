@@ -10,7 +10,7 @@
           </ul>
         </div>
       @endif
-      <form class="" action="{{route ('admin.comics.update', ['comic' => $comic->id] )}}" method="post">
+      <form class="form-group" action="{{route ('admin.comics.update', ['comic' => $comic->id] )}}" method="post">
         @csrf
         @method('PUT')
         <label for="title">Titolo del comic: </label>
@@ -20,7 +20,9 @@
         @enderror
         <br>
         <label for="cover">cover del comic: </label>
-        <img src="{{ $comic->cover}}" alt="">
+        <input type="file" class="form-control-file" name="cover" placeholder="Add a cover image" aria-describedby="coverHelper">
+        <small id="coverHelper" class="form-text text-muted">Add a cover img for this comic</small>
+
         @error('cover')
           <div class="alert alert-danger">{{ $message }}</div>
         @enderror

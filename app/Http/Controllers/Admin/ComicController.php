@@ -85,9 +85,11 @@ class ComicController extends Controller
     {
       $validate = $request->validate([
           'title' => 'required',
-          'cover' => 'required'
+          'cover' => 'nullable | mimes:jpg,jpeg,png,wbmp | max:200',
         ]);
+        $cover = Storage::disk('public')->put('img', $request->cover);
 
+        $validate['cover'] = $cover;
         $comic->update($validate);
         return redirect()->route('admin.comics.index');
     }
@@ -101,6 +103,6 @@ class ComicController extends Controller
     public function destroy(Comic $comic)
     {
       $comic->delete();
-      return redirect()->route('admin.posts.index', compact('comic'));
+      return redirect()->route('admin.comics.index', compact('comic'));
     }
 }
