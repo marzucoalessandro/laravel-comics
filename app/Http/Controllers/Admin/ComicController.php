@@ -85,11 +85,12 @@ class ComicController extends Controller
     {
       $validate = $request->validate([
           'title' => 'required',
-          'cover' => 'nullable | mimes:jpg,jpeg,png,wbmp | max:200',
+          'cover' => 'nullable | image',
         ]);
-        $cover = Storage::disk('public')->put('img', $request->cover);
-
+        $cover = Storage::put('cover_img', $request->cover);
+        
         $validate['cover'] = $cover;
+
         $comic->update($validate);
         return redirect()->route('admin.comics.index');
     }
