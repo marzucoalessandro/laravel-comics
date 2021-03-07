@@ -4,12 +4,14 @@
       <div class="col-9">
         <h3>must reads</h3>
         <section class="must_read">
+        
           <div class="card_two">
             <img src="https://www.dccomics.com/sites/default/files/mustRead_DCC_5_v2_5f6b8b49bfd6a9.60761869.jpg" alt="">
             <h4>get the inside track on all things dc</h4>
             <h2>dc connect</h3>
             <p>The monthly, downloadable catalog of DC' comics,graphic novel,collectibles and more</p>
           </div>
+
           <div class="card_two">
             <img src="https://www.dccomics.com/sites/default/files/MUSTREAD_20190114_SandmanUniverse_5c3e4bab834ac9.58189616.jpg" alt="">
             <h4>from the mind of neil gaiman</h4>

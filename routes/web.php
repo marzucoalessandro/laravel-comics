@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Comic;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $comics = Comic::all();
+    return view('welcome', compact('comics'));
 });
 
 Auth::routes(['register' => false]);

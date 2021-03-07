@@ -11,12 +11,24 @@
       <a href="#">see all</a>
     </div>
 
-    <div class="card_one">
-      <span class="flag">comic book</span>
-      <img class="" src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2021/02/BM_106_300-001_HD_60343a048f2af5.78911718.jpg?itok=2PO-YXXX" alt="batman">
-      <p class="small_text">batman #106</p>
-      <p class="available">available now</p>
-    </div>
+    @foreach($comics as $comic)
+
+      <div class="card_one">
+        <span class="flag">comic book</span>
+          <a href="#"><img class="" src="{{ asset ('storage/' . $comic->cover)}}" alt="batman"></a> 
+          <p class="small_text">{{ $comic->title}}</p>
+          <p class="available">available now</p>
+      </div>
+
+
+    @endforeach
+    <!-- <div class="card_one">
+    <span class="flag">comic book</span>
+    <img class="" src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2021/02/BM_106_300-001_HD_60343a048f2af5.78911718.jpg?itok=2PO-YXXX" alt="batman">
+    <p class="small_text">batman #106</p>
+    <p class="available">available now</p>
+  </div>
+
     <div class="card_one">
       <span class="flag">comic book</span>
       <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2021/02/CRIMESYN_01_300-001_HD_60343d66789362.85081498.jpg?itok=7W1LwUEE" alt="batman">
@@ -40,5 +52,5 @@
       <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2021/02/SWW-09_CoversCredits-3_60355ea0df3695.12671771.jpg?itok=eV8pnTV" alt="batman">
       <p class="small_text">sensational wonder woman #9</p>
       <p class="available">available now</p>
-    </div>
+    </div> -->
 </header>
