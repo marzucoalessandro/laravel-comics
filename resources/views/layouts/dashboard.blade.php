@@ -79,7 +79,7 @@
               <ul class="list-unstyled">
                 <li><a href="{{route ('admin.index')}}">Dashboard</a></li>
                 <li><a href="{{ route ('admin.comics.index')}}">Comics</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="{{ route ('admin.details.index')}}">Comic_details</a></li>
                 <li><a href="/">Site</a></li>
 
               </ul>
