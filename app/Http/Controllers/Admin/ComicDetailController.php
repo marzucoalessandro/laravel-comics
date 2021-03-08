@@ -27,7 +27,7 @@ class ComicDetailController extends Controller
      */
     public function create()
     {
-        
+      return view('admin.details.create');
     }
 
     /**
@@ -38,7 +38,22 @@ class ComicDetailController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validate = $request->validate([
+          'price' => 'required',
+          'description' => 'required',
+          'designer' => 'required',
+          'writer' => 'required',
+          'data_publ' => 'required',
+          'vol_numb' => 'required',
+          'size' => 'required',
+          'page' => 'required',
+          'rated' => 'required'
+        ]);
+
+        ComicDetail::create($validate);
+        $new_detail = ComicDetail::orderBy('id', 'desc')->first();
+
+        return redirect()->route('admin.details.index', compact('new_detail'));
     }
 
     /**
